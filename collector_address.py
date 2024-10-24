@@ -55,6 +55,7 @@ try:
                     json_data = json.loads(target_script.get_attribute('innerHTML'))
                     wallet_address = json_data['props']['pageProps']['publicationLayoutProject']['address']
                     print(wallet_address)
+                    driver.back()
 
 except Exception as e:
     print(f"An error occurred: {e}")
